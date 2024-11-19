@@ -1,8 +1,8 @@
-const express = require('express')
+import express from 'express' 
 // 'path' permite acceder a las carpetas del proyecto de Node JS
-const path = require('path')
+import path from 'path'
 
-const startServer = (options) => {
+export const startServer = (options) => {
     const { port, public_path = 'public' } = options
 
     const app = express()
@@ -21,8 +21,4 @@ const startServer = (options) => {
     app.listen(port, () => {
         console.log(`Escuchando en el puerto ${port}`)
     })
-}
-
-module.exports = {
-    startServer
 }
