@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-web-server",
+  "version": "0.0.1",
+  "description": "Web Server con Node JS",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Ing. Andrés Chaparro",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-var": "^7.5.0",
+    "express": "^4.21.1"
+  }
+}
